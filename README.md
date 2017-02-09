@@ -1,8 +1,8 @@
 # coBlue - Control side
 Program for interacting with **[coBlue](https://github.com/cocoahuke/coBlue)**. Provides C function interface for sending commands and file transfers, has been made into readline interactive command
 
-[![build](https://travis-ci.org/cocoahuke/coBlue.svg?branch=master)](https://travis-ci.org/cocoahuke/coBlue)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cocoahuke/coBlue/blob/master/LICENSE)
+[![build](https://travis-ci.org/cocoahuke/coblue-control.svg?branch=master)](https://travis-ci.org/cocoahuke/coblue-control)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cocoahuke/coblue-control/blob/master/LICENSE)
 
 ## Interactive command
 ```
@@ -52,9 +52,6 @@ if need **Uninstall**
 ```bash
 make uninstall
 ```
-
-## License
-[MIT](https://github.com/cocoahuke/coblue-control/blob/master/LICENSE)
 
 ## Sample - M<font size=3>odify the wpa configuration file</font>
 
