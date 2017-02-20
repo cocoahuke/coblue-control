@@ -13,6 +13,7 @@
 #include <wordexp.h>
 #include <sys/select.h>
 #include "coblue_control.h"
+#include "../config.h"
 
 #define COLOR_OFF	"\x1B[0m"
 #define COLOR_WHITE	"\x1B[0;37m"
@@ -190,8 +191,8 @@ int is_empty(const char *c){
 
 
 int main(int argc, const char * argv[]) {
-    COBLUE_DEVICE_NAME = "orange";
-    COBLUE_VERIFY_KEY = "0381676B-59AE-4D05-B1CA-C350B8870B11";
+    COBLUE_DEVICE_NAME = coblue_device_name;
+    COBLUE_VERIFY_KEY = coblue_verify_key;
     
     //readline will occur override error when with colorful prompt
     //COLOR_YELLOW "[coblue server]" COLOR_OFF "# "

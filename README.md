@@ -1,9 +1,7 @@
 # coBlue - Control side
 Program for interacting with **[coBlue](https://github.com/cocoahuke/coBlue)**. Provides C function interface for sending commands and file transfers, has been made into readline interactive command
 
-[![build](https://travis-ci.org/cocoahuke/coblue-control.svg?branch=master)](https://travis-ci.org/cocoahuke/coblue-control)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cocoahuke/coblue-control/blob/master/LICENSE)
-
+[![Contact](https://img.shields.io/badge/contact-@cocoahuke-fbb52b.svg?style=flat)](https://twitter.com/cocoahuke) [![build](https://travis-ci.org/cocoahuke/coblue-control.svg?branch=master)](https://travis-ci.org/cocoahuke/coblue-control) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cocoahuke/coblue-control/blob/master/LICENSE) [![paypal](https://img.shields.io/badge/Donate-PayPal-039ce0.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EQDXSYW8Z23UY)
 ## Interactive command
 ```
 coBlue console:
@@ -33,6 +31,15 @@ code of the interface is very short, Easy to modify it and customize to your pro
 git clone https://github.com/cocoahuke/coblue-control.git \
 && cd coblue-control
 ```
+**Set** device name and verify key in config.h
+```
+char coblue_device_name[] = "WRITE YOUR DEVICE NAME HERE";
+char coblue_verify_key[] = "WRITE YOUR VERIFY KEY HERE";
+```
+
+`Device name` is the name of the coBlue BLE Peripherals which listed when scanning, default name is orange, you can specify by -name in coBlue
+
+`verify key`, it will send verify key immediately after the connection establish, set key by -verifyw in coBlue
 
 **Compile and install** to /usr/local/bin/
 
@@ -53,7 +60,7 @@ if need **Uninstall**
 make uninstall
 ```
 
-## Sample - M<font size=3>odify the wpa configuration file</font>
+## Demo <font size=3>(Modify the wpa configuration file)</font>
 
 ![sample1](sample1.gif)
 

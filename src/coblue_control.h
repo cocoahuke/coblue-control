@@ -10,7 +10,6 @@
 #define coblue_control_h
 
 #include <pthread/pthread.h>
-#include <readline/readline.h>
 #include <sys/stat.h>
 
 #define COBLUE_DEBUG_OUTPUT 0
